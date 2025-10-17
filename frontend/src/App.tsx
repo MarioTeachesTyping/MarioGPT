@@ -1,12 +1,13 @@
-
+// import { useState } from 'react'
+import Landing from './pages/Landing.tsx'
 
 function App() 
 {
   return (
     <>
-      <p className="read-the-docs">
-        MARIO MARIO MARIO MARIO
-      </p>
+      <div>
+        <Landing />
+      </div>
     </>
   )
 }
