@@ -26,7 +26,8 @@ backend
 
 ## References
 
-Data..: https://www.mariowiki.com/
+Data: https://www.mariowiki.com/
+
 Assets: https://www.spriters-resource.com/
 
 I ❤️ Mario!
