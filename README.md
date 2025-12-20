@@ -18,19 +18,20 @@ backend
 
 ## Goals
 - [x] Set up project structure
-- [ ] Design Landing and Home page
+- [ ] Design Landing page
+- [ ] Design Home page
 - [ ] Build LLM using Llama and LangChain
 - [ ] Set up data through PostgreSQL
 - [ ] Have LLM pull data and query answers
 - [ ] Add chatbots so you can talk to characters
+- [ ] Add different themes
+- [ ] Different agents
 
 ## References
 
 Data: https://www.mariowiki.com/
 
 Assets: https://www.spriters-resource.com/
-
-I ❤️ Mario!
 
 ---
 
