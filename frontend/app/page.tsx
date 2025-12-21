@@ -7,42 +7,39 @@ import Image from "next/image";
 export default function Home() 
 {
   return (
-    <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-sky-300">
-      <h1 className="text-6xl font-[family-name:var(--font-super-mario)] z-10 text-gray-900">
-        MarioGPT
-      </h1>
-      
-      {/* Background Hills - Left */}
-      <div className="absolute bottom-0 left-0 w-1/3 h-56">
-        <Image
-          src="/assets/bg-hills.png"
-          alt="Hills background"
-          width={2000}
-          height={400}
-          className="w-full h-full object-contain object-bottom"
-        />
+    <div className="min-h-screen flex flex-col relative">
+      {/* Main Content Area */}
+      <div className="flex-1 flex items-center justify-center">
+        <h1 className="text-8xl font-[family-name:var(--font-super-mario)] text-gray-400">
+          MarioGPT
+        </h1>
       </div>
       
-      {/* Background Hills - Middle */}
-      <div className="absolute bottom-0 left-1/3 w-1/3 h-56">
-        <Image
-          src="/assets/bg-hills.png"
-          alt="Hills background"
-          width={2000}
-          height={400}
-          className="w-full h-full object-contain object-bottom"
-        />
-      </div>
-      
-      {/* Background Hills - Right */}
-      <div className="absolute bottom-0 left-2/3 w-1/3 h-56">
-        <Image
-          src="/assets/bg-hills.png"
-          alt="Hills background"
-          width={2000}
-          height={400}
-          className="w-full h-full object-contain object-bottom"
-        />
+      {/* Bottom Section with Background */}
+      <div className="relative h-56">
+        {/* Background Gradient Image */}
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="/assets/bg-wiigradient.png"
+            alt="Wii gradient background"
+            fill
+            className="object-cover"
+            priority
+          />
+        </div>
+        
+        {/* Bottom Buttons Section */}
+        <div className="relative pb-16 px-20 flex justify-center gap-8 items-center h-full">
+          {/* Wii Menu Button */}
+          <button className="w-96 py-8 rounded-full bg-gradient-to-b from-white to-gray-100 border-4 border-cyan-400 shadow-2xl hover:shadow-3xl transition-all hover:scale-105">
+            <span className="text-gray-700 text-4xl font-semibold tracking-wide">Chat</span>
+          </button>
+          
+          {/* Start Button */}
+          <button className="w-96 py-8 rounded-full bg-gradient-to-b from-white to-gray-100 border-4 border-cyan-400 shadow-2xl hover:shadow-3xl transition-all hover:scale-105">
+            <span className="text-gray-700 text-4xl font-semibold tracking-wide">Sign-Up</span>
+          </button>
+        </div>
       </div>
     </div>
   );
